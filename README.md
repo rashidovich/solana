@@ -14,8 +14,7 @@ sudo apt install docker.io curl -y \
 
 `Telegraf config`
 
-If you plan to send metrics to Solana community dashboard then use [this config](https://github.com/stakeconomy/solanamonitoring#example-telegraf-configuration), if you create your own environment (influxDb + grafana) then you might use same config but with substituted values in [[outputs.influxdb]] section.
-In both cases we update [[inputs.exec]] section with new **commands**
+If you plan to send metrics to Solana community dashboard then use [this config](https://github.com/stakeconomy/solanamonitoring#example-telegraf-configuration), if you create your own environment (influxDb + grafana) then you might use same config but with substituted values in [[outputs.influxdb]] section.  In both cases we update [[inputs.exec]] section with new **commands**
 
 [[inputs.exec]]  
 &ensp;commands = ["/root/solanamonitoring/monitor.sh -s /bin/bash root"]
