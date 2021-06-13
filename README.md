@@ -64,6 +64,7 @@ telegraf:latest
 ***/root/.local/share/solana/install/active_release/bin/solana config get***
 
 > ![image](https://user-images.githubusercontent.com/5165742/121822575-1ee3a080-cca0-11eb-8944-717fdc6bed8b.png)
+> 
 > to connect to testnet cluster, use ***/root/.local/share/solana/install/active_release/bin/solana config set --url http://api.testnet.solana.com***
 
 5. ***exit***
