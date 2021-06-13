@@ -1,8 +1,8 @@
 # Running telegraf in docker container
 
-There's a cool [guide](https://github.com/stakeconomy/solanamonitoring) about Solana node monitoring. It describes how one could setup monitoring using [Telegraf](https://github.com/influxdata/telegraf) + [InfluxDb](https://github.com/influxdata/influxdb) + [Grafana](https://github.com/grafana/grafana).
+There's a cool [guide](https://github.com/stakeconomy/solanamonitoring) about Solana node monitoring describes how one could setup monitoring using [Telegraf](https://github.com/influxdata/telegraf) + [InfluxDb](https://github.com/influxdata/influxdb) + [Grafana](https://github.com/grafana/grafana).
 
-All these instruments could be wrapped into docker containers. I'll show how to spin-up Telegraf instance.
+All instruments could be wrapped into docker containers. I'll show only how to spin-up Telegraf instance.
 
 **Prerequisites**:
 
