@@ -63,9 +63,9 @@ telegraf:latest
 3. check that solana is connected to the right cluster (devnet, testnet, mainnet)
 **/root/.local/share/solana/install/active_release/bin/solana config get**
 
-![image](https://user-images.githubusercontent.com/5165742/121822575-1ee3a080-cca0-11eb-8944-717fdc6bed8b.png)
+> ![image](https://user-images.githubusercontent.com/5165742/121822575-1ee3a080-cca0-11eb-8944-717fdc6bed8b.png)
 
-in case you would like to change to testnet cluster, use **/root/.local/share/solana/install/active_release/bin/solana config set --url http://api.testnet.solana.com**
+> in case you would like to change to testnet cluster, use **/root/.local/share/solana/install/active_release/bin/solana config set --url http://api.testnet.solana.com**
 
 5. **exit**
 6. check that telegraf logs are Ok **docker logs telegraf -f --tail 20**
