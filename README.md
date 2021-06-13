@@ -18,7 +18,7 @@ If you plan to send metrics to Solana community dashboard then use [this config]
 In both cases we update [[inputs.exec]] section with new **commands**
 
 [[inputs.exec]]  
-    commands = ["/root/solanamonitoring/monitor.sh -s /bin/bash root"]
+&ensp;commands = ["/root/solanamonitoring/monitor.sh -s /bin/bash root"]
 
 store telegraf config using path: /home/user/telegraf/telegraf.conf
 
