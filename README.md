@@ -21,17 +21,17 @@ In both cases we update [[inputs.exec]] section with new **commands**
 [[inputs.exec]]  
 &ensp;commands = ["/root/solanamonitoring/monitor.sh -s /bin/bash root"]
 
-store telegraf config using path: /home/*user*/telegraf/telegraf.conf
+save telegraf config on server using path: /home/*user*/telegraf/telegraf.conf
 
 `Minotiring shell script`
 
 Could be taken from [here](https://github.com/stakeconomy/solanamonitoring/blob/main/monitor.sh) (don't forget to update values accordingly)
 
-identityPubkey="your pubkey"   
-voteAccount="your voteaccount"  
-rpcURL="your rpc url" #usually http://127.0.0.1:8899  
+*identityPubkey*="your pubkey"   
+*voteAccount*="your voteaccount"  
+*rpcURL*="your rpc url" #usually http://127.0.0.1:8899  
 
-store monitor.sh using path: /home/*user*/solanamonitoring/monitor.sh
+save monitor.sh on server using path: /home/*user*/solanamonitoring/monitor.sh
 
 `Docker command`
 
