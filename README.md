@@ -29,7 +29,7 @@ Could be taken from [here](https://github.com/stakeconomy/solanamonitoring/blob/
 
 *identityPubkey*="your pubkey"   
 *voteAccount*="your voteaccount"  
-*rpcURL*="your rpc url" #usually http://127.0.0.1:8899  
+*rpcURL*="http://127.0.0.1:8899"
 
 save monitor.sh on server using path: /home/*user*/solanamonitoring/monitor.sh
 
