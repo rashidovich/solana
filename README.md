@@ -20,7 +20,7 @@ In both cases we update [[inputs.exec]] section with new **commands**
 [[inputs.exec]]  
 &ensp;commands = ["/root/solanamonitoring/monitor.sh -s /bin/bash root"]
 
-store telegraf config using path: /home/user/telegraf/telegraf.conf
+store telegraf config using path: /home/*user*/telegraf/telegraf.conf
 
 `Minotiring shell script`
 
@@ -30,7 +30,7 @@ identityPubkey="your pubkey"
 voteAccount="your voteaccount"  
 rpcURL="your rpc url" #usually http://127.0.0.1:8899  
 
-store monitor.sh using path: /home/user/solanamonitoring/monitor.sh
+store monitor.sh using path: /home/*user*/solanamonitoring/monitor.sh
 
 `Docker command`
 
@@ -38,10 +38,10 @@ sudo docker run -d \
 --network="host" \
 --name=telegraf \
 --restart=always \
--v /home/user/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \
--v /home/user/solanamonitoring:/root/solanamonitoring \
--v /home/user/.config/solana:/root/.config/solana \
--v /home/user/.local/share/solana:/root/.local/share/solana \
+-v /home/*user*/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \
+-v /home/*user*/solanamonitoring:/root/solanamonitoring \
+-v /home/*user*/.config/solana:/root/.config/solana \
+-v /home/*user*/.local/share/solana:/root/.local/share/solana \
 -v /:/hostfs:ro \
 -v /etc:/hostfs/etc:ro \
 -v /proc:/hostfs/proc:ro \
