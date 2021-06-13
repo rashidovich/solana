@@ -60,7 +60,8 @@ telegraf:latest
 
 1. connect to container **docker exec -it telegraf bash**
 2. run command **apt-get update && apt-get install jq && apt-get install bc**
-3. check that solana is connected to the right cluster (devnet, testnet, mainnet) **/root/.local/share/solana/install/active_release/bin/solana config get**
+3. check that solana is connected to the right cluster (devnet, testnet, mainnet)
+**/root/.local/share/solana/install/active_release/bin/solana config get**
 testnet exp.
 
 ![image](https://user-images.githubusercontent.com/5165742/121822575-1ee3a080-cca0-11eb-8944-717fdc6bed8b.png)
