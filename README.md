@@ -23,7 +23,7 @@ In both cases we update [[inputs.exec]] section with new **commands**
 
 save telegraf config on server using path: /home/*user*/telegraf/telegraf.conf
 
-`Minotiring shell script`
+`Monitoring shell script`
 
 Could be taken from [here](https://github.com/stakeconomy/solanamonitoring/blob/main/monitor.sh) (don't forget to update values accordingly)
 
