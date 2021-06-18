@@ -40,9 +40,9 @@ sudo docker run -d \
 --name=telegraf \
 --restart=always \
 -v /home/*user*/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \
--v /home/*user*/solanamonitoring:/root/solanamonitoring \
--v /home/*user*/.config/solana:/root/.config/solana \
--v /home/*user*/.local/share/solana:/root/.local/share/solana \
+-v /home/*user*/solanamonitoring:/home/*user*/solanamonitoring \
+-v /home/*user*/.config/solana:/home/*user*/.config/solana \
+-v /home/*user*/.local/share/solana:/home/*user*/.local/share/solana \
 -v /:/hostfs:ro \
 -v /etc:/hostfs/etc:ro \
 -v /proc:/hostfs/proc:ro \
@@ -58,16 +58,16 @@ telegraf:latest
 
 *Monitor.sh* has ***jq*** and ***bc*** dependancies, we need to install them inside of docker container, therefore
 
-1. connect to container ***docker exec -it telegraf bash***
+1. connect to container ***sudo docker exec -it telegraf bash***
 2. run command ***apt-get update && apt-get install jq && apt-get install bc***
 3. check that solana is connected to the right cluster (devnet, testnet, mainnet)
-***/root/.local/share/solana/install/active_release/bin/solana config get***
+***/home/*user*/.local/share/solana/install/active_release/bin/solana config get***
 
 > ![image](https://user-images.githubusercontent.com/5165742/121822575-1ee3a080-cca0-11eb-8944-717fdc6bed8b.png)
 > 
-> to connect to testnet cluster, use ***/root/.local/share/solana/install/active_release/bin/solana config set --url http://api.testnet.solana.com***
+> to connect to testnet cluster, use ***/home/*user*/.local/share/solana/install/active_release/bin/solana config set --url http://api.testnet.solana.com***
 
 5. ***exit***
-6. check that telegraf logs are Ok ***docker logs telegraf -f --tail 20***
+6. check that telegraf logs are Ok ***sudo docker logs telegraf -f --tail 20***
 
 `Done`
