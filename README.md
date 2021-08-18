@@ -35,23 +35,23 @@ save monitor.sh on server using path: /home/*user*/solanamonitoring/monitor.sh
 
 `Docker command`
 
-sudo docker run -d \\
---network="host" \\
---name=telegraf \\
---restart=always \\
--v /home/*user*/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \\
--v /home/*user*/solanamonitoring:/home/*user*/solanamonitoring \\
--v /home/*user*/.config/solana:/home/*user*/.config/solana \\
--v /home/*user*/.local/share/solana:/home/*user*/.local/share/solana \\
--v /:/hostfs:ro \\
--v /etc:/hostfs/etc:ro \\
--v /proc:/hostfs/proc:ro \\
--v /sys:/hostfs/sys:ro \\
--v /var/run/utmp:/var/run/utmp:ro \\
--e HOST_ETC=/hostfs/etc \\
--e HOST_PROC=/hostfs/proc \\
--e HOST_SYS=/hostfs/sys \\
--e HOST_MOUNT_PREFIX=/hostfs \\
+sudo docker run -d \
+--network="host" \
+--name=telegraf \
+--restart=always \
+-v /home/*user*/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \
+-v /home/*user*/solanamonitoring:/home/*user*/solanamonitoring \
+-v /home/*user*/.config/solana:/home/*user*/.config/solana \
+-v /home/*user*/.local/share/solana:/home/*user*/.local/share/solana \
+-v /:/hostfs:ro \
+-v /etc:/hostfs/etc:ro \
+-v /proc:/hostfs/proc:ro \
+-v /sys:/hostfs/sys:ro \
+-v /var/run/utmp:/var/run/utmp:ro \
+-e HOST_ETC=/hostfs/etc \
+-e HOST_PROC=/hostfs/proc \
+-e HOST_SYS=/hostfs/sys \
+-e HOST_MOUNT_PREFIX=/hostfs \
 telegraf:latest
 
 `Configure telegraf container`
