@@ -8,9 +8,9 @@ All instruments could be wrapped into docker containers. I'll show only how to s
 
 `Docker`
 
-sudo apt install docker.io curl -y
+sudo apt install docker.io curl -y && \
+sudo systemctl enable docker && \
 sudo systemctl start docker
-sudo systemctl enable docker
 
 `Telegraf config`
 
@@ -40,7 +40,7 @@ sudo docker run -d \
 --name=telegraf \
 --restart=always \
 -v /home/*user*/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \
--v /home/*user*/solanamonitoring:/home/*user*/solanamonitoring \
+-v /home/*user*/solanamonitoring:/home/*user*/solana/solanamonitoring \
 -v /home/*user*/.config/solana:/home/*user*/.config/solana \
 -v /home/*user*/.local/share/solana:/home/*user*/.local/share/solana \
 -v /:/hostfs:ro \
