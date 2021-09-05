@@ -8,8 +8,8 @@ All instruments could be wrapped into docker containers. I'll show only how to s
 
 `Docker`
 
-sudo apt install docker.io curl -y && \
-sudo systemctl enable docker && \
+sudo apt install docker.io curl -y && \\
+sudo systemctl enable docker && \\
 sudo systemctl start docker
 
 `Telegraf config`
