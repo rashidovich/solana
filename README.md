@@ -40,7 +40,7 @@ sudo docker run -d \
 --name=telegraf \
 --restart=always \
 -v /home/*user*/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf \
--v /home/*user*/solanamonitoring:/home/*user*/solana/solanamonitoring \
+-v /home/*user*/solana/solanamonitoring:/home/*user*/solana/solanamonitoring \
 -v /home/*user*/.config/solana:/home/*user*/.config/solana \
 -v /home/*user*/.local/share/solana:/home/*user*/.local/share/solana \
 -v /:/hostfs:ro \
